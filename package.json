@@ -1,6 +1,6 @@
 {
   "name": "runner-cli",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A universal task runner, with support for NPM scripts, Gulp, Makefiles and shell scripts",
   "bin": {
     "run": "./bin/run.js"
@@ -12,7 +12,14 @@
     "type": "git",
     "url": "git+https://github.com/ledfusion/runner-cli.git"
   },
-  "keywords": ["task", "runner", "npm", "gulp", "make", "universal"],
+  "keywords": [
+    "task",
+    "runner",
+    "npm",
+    "gulp",
+    "make",
+    "universal"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -20,7 +27,8 @@
   },
   "homepage": "https://github.com/ledfusion/runner-cli#readme",
   "dependencies": {
-    "hasbin": "^1.2.3"
+    "hasbin": "^1.2.3",
+    "inquirer": "^6.0.0"
   },
   "devDependencies": {
     "husky": "^0.14.3",

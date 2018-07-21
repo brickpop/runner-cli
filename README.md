@@ -23,7 +23,8 @@ The above code will attempt to run `npm run build`, `gulp build`, `make build`, 
 - [x] Run tasks from `package.json`
 - [x] Run tasks from `gulpfile.js`
 - [ ] Run tasks from `makefile`
-- [ ] Run tasks from shell scripts exposing functions
-- [ ] Generate templates for the above if they don't exist
-- [ ] Detect and prompt for installation if a tool is missing
-- [ ] Install local Gulp if missing
+- [ ] Run tasks from [Taskfiles](https://hackernoon.com/introducing-the-taskfile-5ddfe7ed83bd) (shell scripts exposing functions)
+- [~] Display the available tasks
+- [ ] Generate templates for the supported formats
+- [~] Detect and prompt for installation if a tool is missing
+- [x] Install local Gulp if missing

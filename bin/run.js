@@ -5,13 +5,13 @@ const { detectRunner, digestParameters } = require("../lib/runners")
 const { asyncSpawn } = require("../lib/spawning")
 const { showUsage } = require("../lib/usage")
 
-function main() {
-  if (process.argv.length == 2) {
+async function main() {
+  if (process.argv.length == 3 && (process.argv[2] == "-h" || process.argv[2] == "--help")) {
     showUsage()
     return Promise.resolve()
   }
 
-  let [err, runner] = detectRunner()
+  let [err, runner] = await detectRunner()
   if (err) {
     return Promise.reject(err)
   }
