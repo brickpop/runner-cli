@@ -1,6 +1,6 @@
 {
   "name": "runner-cli",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A universal task runner, with support for NPM scripts, Gulp, Makefiles and shell scripts",
   "bin": {
     "run": "./bin/run.js"
