@@ -16,9 +16,9 @@ async function main() {
     return Promise.reject(err)
   }
 
-  const args = digestParameters(process.argv, runner)
+  const [cmd, ...args] = digestParameters(process.argv, runner)
 
-  return asyncSpawn(runner, args)
+  return asyncSpawn(cmd, args)
 }
 
 main().then(result => {
