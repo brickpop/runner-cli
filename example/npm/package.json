@@ -1,0 +1,13 @@
+{
+  "name": "runner-cli-npm-example",
+  "version": "1.0.0",
+  "description": "A dummy package.json file",
+  "scripts": {
+    "one": "echo 'This is action 1'",
+    "two": "echo 'This is action 2'",
+    "main": "run one && run two"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
