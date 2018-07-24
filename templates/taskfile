@@ -1,0 +1,50 @@
+#!/bin/bash
+PATH=./node_modules/.bin:$PATH
+
+###############################################################################
+# ACTIONS
+
+function build {
+  echo "This is the build action"
+  echo
+  echo "Running dependencies (sequential)"
+
+  styles
+  media "*.ttf" # passing parameters
+  echo "Dependencies completed"
+
+  echo
+  echo "Running dependencies (concurrent)"
+
+  styles & media
+  wait
+
+  echo "Dependencies completed concurrently"
+  echo
+}
+
+function styles {
+  echo "> This function processes the styles"
+}
+
+function media {
+  if [ "$1" != "" ]; then
+    echo "> This function processes the media files (parameter \$1 = $1)"
+  else
+    echo "> This function processes the media files (no parameter)"
+  fi
+}
+
+###############################################################################
+# DEFAULT => INFO
+
+function default {
+  echo "$0 <task> <args>"
+  echo
+  echo "Available tasks:"
+  compgen -A function | cat -n
+}
+
+
+TIMEFORMAT="Task completed in %3lR"
+time ${@:-default}
