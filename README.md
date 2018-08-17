@@ -169,8 +169,8 @@ Available tasks:
 Task completed in 0m0.004s
 ```
 
-### Why a pseudo task runner
-An article will be published soon. Stay tuned!
+### Why a meta task runner
+Read the [motivational article on Medium.com](https://medium.com/jordi-moraleda/a-universal-task-runner-to-run-them-all-d93f1a1bf8b1)
 
 ### Roadmap:
 - [x] Run tasks from `package.json`
