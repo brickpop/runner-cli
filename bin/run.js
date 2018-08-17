@@ -11,8 +11,8 @@ async function main() {
     showUsage()
     return Promise.resolve()
   }
-  else if (process.argv[2] == "--create" && process.argv[3]) {
-    writeTemplate(process.argv[3])
+  else if (process.argv[2] == "--new") {
+    await writeTemplate()
     return Promise.resolve()
   }
 

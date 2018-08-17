@@ -180,4 +180,4 @@ An article will be published soon. Stay tuned!
 - [x] Display the available tasks
 - [x] Detect and prompt for installation if a tool is missing
 - [x] Install local Gulp if missing
-- [ ] Generate templates for the supported formats
+- [x] Generate templates for the supported formats
