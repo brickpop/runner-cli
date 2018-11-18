@@ -25,7 +25,7 @@ To run a task:
 run action
 ```
 
-The command above will attempt to run `npm run action`, `gulp action`, `make action` and `sh taskfile action`.
+The command above will attempt to run `npm run action`, `gulp action`, `make action` and `bash taskfile action`.
 
 ### Invocation examples
 
@@ -90,7 +90,7 @@ If the project has a `taskfile`:
 
 ```
 $ run main
-sh taskfile main
+bash taskfile main
 
 This is the main action
 
@@ -157,7 +157,7 @@ Available actions:
 If the project has a `taskfile`:
 ```
 $ run
-sh taskfile
+bash taskfile
 
 taskfile <task> <args>
 
